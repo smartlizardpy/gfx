@@ -1,0 +1,186 @@
+{
+  "Deniz Gürşen": {
+    "instrument": "Piano",
+    "pieces": [
+      { "composer": "J. Thompson", "piece": "Mary Had A Little Lamb", "accompanist": "Defne Gürşen" },
+      { "composer": "J. Thompson", "piece": "Yankee Doodle" }
+    ]
+  },
+  "Mira Çongara": {
+    "instrument": "Piano",
+    "pieces": [
+      { "composer": "J. Thompson", "piece": "Bells" }
+    ]
+  },
+  "Nazlıhan Çakıroğlu": {
+    "instrument": "Piano",
+    "pieces": [
+      { "composer": "J. Thompson", "piece": "Old MacDonald" }
+    ]
+  },
+  "Aslıhan Çakıroğlu": {
+    "instrument": "Piano",
+    "pieces": [
+      { "composer": "J. Thompson", "piece": "Mary Had A Little Lamb" },
+      { "composer": "S. Suzuki", "piece": "Twinkle Twinkle Little Star (4 El)" }
+    ]
+  },
+  "Mete Erberdi": {
+    "instrument": "Piano",
+    "pieces": [
+      { "composer": "J. Offenbach", "piece": "Barkarole" },
+      { "composer": "A. Ifukube", "piece": "Godzilla (Main Theme)" }
+    ]
+  },
+  "Özgü Lena Ferhanoğlu": {
+    "instrument": "Piano",
+    "pieces": [
+      { "composer": "J. Thompson", "piece": "Old MacDonald" },
+      { "composer": "J. Offenbach", "piece": "Can Can" }
+    ]
+  },
+  "Layra Bayraktar": {
+    "instrument": "Piano",
+    "pieces": [
+      { "composer": "Anonymous", "piece": "Happy Birthday Song" }
+    ]
+  },
+  "Defne Bilge Ateş": {
+    "instrument": "Piano",
+    "pieces": [
+      { "composer": "J. Thompson", "piece": "Row, Row" },
+      { "composer": "J. Thompson", "piece": "Gün Doğarken" }
+    ]
+  },
+  "Selin Acer": {
+    "instrument": "Piano",
+    "pieces": [
+      { "composer": "J. Thompson", "piece": "Ten Little Indians" },
+      { "composer": "L. V. Beethoven", "piece": "Ode to Joy" }
+    ]
+  },
+  "Noyan Okan": {
+    "instrument": "Piano",
+    "pieces": [
+      { "composer": "J. Thompson", "piece": "Gayda Çalgıcıları" },
+      { "composer": "Anonymous", "piece": "Flea Waltz" }
+    ]
+  },
+  "Güneş Demir": {
+    "instrument": "Piano",
+    "pieces": [
+      { "composer": "German Folk Song", "piece": "Lightly Row" },
+      { "composer": "Y. Johnson", "piece": "Dance For Two", "accompanist": "Ateş Demir" }
+    ]
+  },
+  "Doğa Adebalı": {
+    "instrument": "Piano",
+    "pieces": [
+      { "composer": "J. Thompson", "piece": "Bir Varmış Bir Yokmuş" },
+      { "composer": "A. Diabelli", "piece": "Piano Duet Opus 149 No: 6" }
+    ]
+  },
+  "Lara Aybar & Defne Gürşen": {
+    "instrument": "Piano and Violin",
+    "pieces": [
+      { "composer": "S. Suzuki", "piece": "Twinkle Twinkle Variation A" }
+    ]
+  },
+  "Ahmet Kartal Çakıroğlu": {
+    "instrument": "Piano",
+    "pieces": [
+      { "composer": "J. S. Bach", "piece": "Musette" }
+    ]
+  },
+  "İpek Gedik": {
+    "instrument": "Piano",
+    "pieces": [
+      { "composer": "Anonymous", "piece": "Flea Waltz" }
+    ]
+  },
+  "İpek Kuru": {
+    "instrument": "Piano",
+    "pieces": [
+      { "composer": "S. Suzuki", "piece": "Allegro" }
+    ]
+  },
+  "Defne Kaygusuz": {
+    "instrument": "Piano",
+    "pieces": [
+      { "composer": "W.A. Mozart", "piece": "Andante Grazioso" },
+      { "composer": "A. Diabelli", "piece": "Piano Duet Op.149 No: 5" }
+    ]
+  },
+  "Defne Uluçay": {
+    "instrument": "Piano",
+    "pieces": [
+      { "composer": "Traditional", "piece": "When the Saints Go Marchin’ in" },
+      { "composer": "L. V. Beethoven", "piece": "Ode to Joy" }
+    ]
+  },
+  "Elif Beyza Yılmaz": {
+    "instrument": "Keman",
+    "pieces": [
+      { "composer": "S. Suzuki", "piece": "Lightly Row" },
+      { "composer": "S. Suzuki", "piece": "Song of the Wind" }
+    ]
+  },
+  "Mehmet Cem Öztürk": {
+    "instrument": "Piano",
+    "pieces": [
+      { "composer": "J. Strauss", "piece": "Radetzky March" }
+    ]
+  },
+  "Mira Cığızoğlu": {
+    "instrument": "Piano",
+    "pieces": [
+      { "composer": "W. A. Mozart", "piece": "Eine Kleine Nachtmusik" }
+    ]
+  },
+  "Defne Gürşen": {
+    "instrument": "Piano",
+    "pieces": [
+      { "composer": "W. A. Mozart", "piece": "Rondo alla Turca" }
+    ]
+  },
+  "Lara Aybar": {
+    "instrument": "Piano",
+    "pieces": [
+      { "composer": "L. V. Beethoven", "piece": "Für Elise" },
+      { "composer": "J. Brahms", "piece": "Hungarian Dance" }
+    ]
+  },
+  "Ateş Demir": {
+    "instrument": "Piano",
+    "pieces": [
+      { "composer": "L. V. Beethoven", "piece": "Sonatina in G Major" }
+    ]
+  },
+  "Ayka Blazhenkova": {
+    "instrument": "Violin",
+    "pieces": [
+      { "composer": "J. S. Bach", "piece": "Gavotte in G Minor", "accompanist": "Ateş Demir" },
+      { "composer": "K. Bohm", "piece": "Perpetual Motion - Little Suite No.6" }
+    ]
+  },
+  "Lina Göğüş": {
+    "instrument": "Piano",
+    "pieces": [
+      { "composer": "R. Schumann", "piece": "Wild Rider" },
+      { "composer": "E. Grinko", "piece": "Valse" }
+    ]
+  },
+  "Dila Okay": {
+    "instrument": "Piano",
+    "pieces": [
+      { "composer": "F. Chopin", "piece": "Waltz in A Minor, B 150" }
+    ]
+  },
+  "Mina Nehir Tekin": {
+    "instrument": "Piano",
+    "pieces": [
+      { "composer": "J. S. Bach", "piece": "Prelude No:3 from 12 Short Preludes" },
+      { "composer": "W. A. Mozart", "piece": "Sonata No.16, in C Major, K 545" }
+    ]
+  }
+}

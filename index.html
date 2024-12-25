@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concert Overlay</title>
+    <style>
+        #ticker {
+    display: none;
+}
+        body {
+            margin: 0;
+            padding: 0;
+        
+            color: white;
+            font-family: 'Arial', sans-serif;
+            overflow: hidden;
+        }
+
+        /* Lower Thirds Styles */
+        .lower-thirds {
+            position: absolute;
+            bottom: -100px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, #ffffff, #f3f3f3);
+            color: black;
+            border-radius: 15px;
+            padding: 20px 25px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+            text-align: left;
+            width: 75%;
+            max-width: 800px;
+            opacity: 0;
+            visibility: hidden;
+            transition: bottom 0.5s ease, opacity 0.5s ease, visibility 0.5s ease;
+            display: flex;
+            align-items: center;
+        }
+    
+        .lower-thirds.show {
+            bottom: 70px;
+            opacity: 1;
+            visibility: visible;
+           
+        }
+
+        .emoji-icon {
+            font-size: 40px;
+            margin-right: 20px;
+        }
+
+        .text-content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .lower-thirds .name {
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0;
+            color: #222;
+        }
+
+        .lower-thirds .instrument {
+            font-size: 20px;
+            font-style: italic;
+            margin: 5px 0;
+            color: #555;
+        }
+
+        .lower-thirds .song {
+            font-size: 22px;
+            font-weight: bold;
+            margin: 10px 0 0;
+            color: #3b3b3bd2;
+        }
+
+        /* Ticker Styles */
+        .ticker {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background: linear-gradient(to right, #222, #444);
+            color: white;
+            padding: 15px 0;
+            font-size: 18px;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Lower Thirds Overlay -->
+    <div class="lower-thirds" id="lower-thirds">
+        <div class="emoji-icon">♫</div>
+        <div class="text-content">
+            <div class="name" id="name">John Doe</div>
+            <div class="instrument" id="instrument">Piano</div>
+            <div class="song" id="song">Currently Playing: Imagine</div>
+        </div>
+    </div>
+
+    <!-- Standalone Ticker -->
+    <marquee id="ticker" behavior="scroll" direction="left" scrollamount="10"
+        style="position: absolute; bottom: 0; width: 100%; background: linear-gradient(to right, #222, #444); color: white; padding: 15px 0; font-size: 18px;">
+        Welcome to the Piano and Violin Concert!
+    </marquee>
+
+    <script>
+        // WebSocket connection
+        const ws = new WebSocket('ws://localhost:8081'); // Replace with your WebSocket server address
+
+        // DOM Elements
+        const ticker = document.getElementById('ticker');
+        const lowerThirds = document.getElementById('lower-thirds');
+        const nameElement = document.getElementById('name');
+        const instrumentElement = document.getElementById('instrument');
+        const songElement = document.getElementById('song');
+
+        ws.onopen = () => {
+            console.log('WebSocket connected');
+        };
+
+        ws.onmessage = (event) => {
+            const data = JSON.parse(event.data);
+
+            if (data.type === 'ticker') {
+                if (data.action === 'show') {
+                    showTicker(data.message);
+                } else if (data.action === 'hide') {
+                    hideTicker();
+                }
+            }
+
+            if (data.type === 'lower-thirds') {
+                updateLowerThirds(data.name, data.instrument, data.song);
+            }
+        };
+
+        ws.onerror = (error) => {
+            console.error('WebSocket error:', error);
+        };
+
+        ws.onclose = () => {
+            console.log('WebSocket closed');
+        };
+
+        // Show the ticker with a message
+        function showTicker(message) {
+            if (message) {
+                ticker.textContent = message;
+            }
+            ticker.style.display = 'block'; // Make the ticker visible
+        }
+
+        // Hide the ticker
+        function hideTicker() {
+            ticker.style.display = 'none'; // Hide the ticker
+        }
+
+        // Update lower-thirds overlay
+        function updateLowerThirds(name, instrument, song) {
+            nameElement.textContent = name || 'Unknown Performer';
+            instrumentElement.textContent = instrument || 'Unknown Instrument';
+            songElement.textContent = song ? ` ${song}` : 'No Song Playing';
+
+            // Show lower-thirds
+            lowerThirds.classList.add('show');
+
+            // Hide after 10 seconds
+            setTimeout(() => {
+                lowerThirds.classList.remove('show');
+            }, 10000);
+        }
+    </script>
+</body>
+
+</html>a
